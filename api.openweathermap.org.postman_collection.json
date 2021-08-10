@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "eda63a0b-b61e-4e81-a185-2dd17a5e721d",
+		"name": "api.openweathermap.org",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "id=501183&appid=...&lang=ru",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?id=501183&appid=8d3f4ca3fe57058a39b58b2a30945699&lang=ru",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "501183"
+						},
+						{
+							"key": "appid",
+							"value": "8d3f4ca3fe57058a39b58b2a30945699"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "q=Moscow&appid=...",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=8d3f4ca3fe57058a39b58b2a30945699",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Moscow"
+						},
+						{
+							"key": "appid",
+							"value": "8d3f4ca3fe57058a39b58b2a30945699"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "q=Tokio&units=imperial&appid=...",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/find?q=Tokio&units=imperial&appid=8d3f4ca3fe57058a39b58b2a30945699",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Tokio"
+						},
+						{
+							"key": "units",
+							"value": "imperial"
+						},
+						{
+							"key": "appid",
+							"value": "8d3f4ca3fe57058a39b58b2a30945699"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appid=...&lat=48.8534&lon=2.3488&lang=FR",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "8d3f4ca3fe57058a39b58b2a30945699",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "appid",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/find?lat=48.8534&lon=2.3488&lang=FR",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "48.8534"
+						},
+						{
+							"key": "lon",
+							"value": "2.3488"
+						},
+						{
+							"key": "lang",
+							"value": "FR"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
